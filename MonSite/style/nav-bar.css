@@ -1,0 +1,79 @@
+.bar_de_navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-block: 10px 10px;
+    border-bottom: 1px solid black;
+    background-color: rgb(48, 43, 43);
+}
+
+.section_de_navigation{
+    display: flex;
+    margin-inline: 3px 3px;
+    padding-inline: 5px 5px;
+    padding-block: 5px 5px;
+}
+
+.logo_de_navigation{
+    font-size: 18px;
+}
+
+.petite_section{
+    border-left: 1px dotted rgb(218, 214, 214);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(218, 214, 214);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: space-between;
+}
+.activer{
+    font-size: 19px;
+    color: rgb(252, 248, 248);
+}
+.contact_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 20%;
+}
+.contact_bar_left .contact_bar_right{
+    display: flex;
+    flex-direction: column;
+}
+.magasin-ouvert{
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
+    padding-inline: 10px 10px;
+    width: fit-content;
+    border-radius: 3px;
+    opacity: 0.5;
+}
+.magasin-ferme{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding-inline: 10px 10px;
+    width: fit-content;
+    border-radius: 3px;
+    opacity: 0.5;
+}
+
+.magasin-ferme p{
+    opacity: 1;
+    font-size: 18px;
+    color: black;
+}
+
+.magasin-ouvert p{
+    opacity: 1;
+    font-size: 18px;
+    color: black;
+}

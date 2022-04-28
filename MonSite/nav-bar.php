@@ -1,4 +1,4 @@
-<?php require_once "./controler/fonctionDeVue.php";?>
+<?php require_once (dirname(__FILE__).DIRECTORY_SEPARATOR."./controler/fonctionDeVue.php");?>
 <nav>   
     <head>
         <title><?php if(isset($title)){echo $title;} else {echo "Mon Site";} ?></title>
@@ -14,6 +14,9 @@
             </div>
             <div class="section_de_navigation contact_de_navigation petite_section">
                 <?= lien("/contact.php", "contact section", "Contact");?>
+            </div>
+            <div class="section_de_navigation menu_de_navigation petite_section">
+                <?= lien("/component/menu.php", "menu section", "Menu");?>
             </div>
         </div>
     </body>

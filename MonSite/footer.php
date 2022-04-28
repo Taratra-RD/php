@@ -1,6 +1,6 @@
 <pre>
 <?php
-require_once "./controler/fonctionDeVue.php";
+require_once (dirname(__FILE__).DIRECTORY_SEPARATOR."./controler/fonctionDeVue.php");
     function footer_nav($lien, $affichage)
     {?>
         <li>

@@ -1,7 +1,7 @@
 <?php
     $title = "Page de contact";
     $value = $_GET["heure"];
-    require "nav-bar.php";
+    require "./nav-bar.php";
     $jours = ($_GET["jours"] ?? date('N'))
 ?>
     <div class="contact_bar">
@@ -29,5 +29,5 @@
         </div>
     </div>
 <?php
-    require "footer.php";
+    require_once "./footer.php";
 ?>

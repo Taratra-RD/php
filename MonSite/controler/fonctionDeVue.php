@@ -1,6 +1,6 @@
 <?php
-    require_once "data.php";
-    require_once "./config/config.php";
+    require_once (dirname(__FILE__).DIRECTORY_SEPARATOR."../data.php");
+    require_once (dirname(__FILE__).DIRECTORY_SEPARATOR."../config/config.php");
 
     function lien($lien, $classe = "", $label)
     {
@@ -130,6 +130,7 @@
     {
         foreach($entite as $k=>$j)
         {
+            
             ?>
                 <option value="<?=$k?>"><?=$j?></option>
             <?php
@@ -175,7 +176,7 @@
             $creneaux = $creneau[$j];
             if(!empty($creneaux))
             {
-                if($creneaux[0][0]<$heure && $heure<$creneaux[0][1] || isset($creneaux) && $creneaux[1][0]<$heure && $heure<$creneaux[1][1])
+                if($creneaux[0][0]<$heure && $heure<$creneaux[0][1] || $creneaux[1][0]<$heure && $heure<$creneaux[1][1])
                 {
                     ?>
                         <div class="magasin-ouvert">
